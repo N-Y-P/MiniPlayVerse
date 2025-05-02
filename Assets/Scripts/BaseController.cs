@@ -12,10 +12,13 @@ public class BaseController : MonoBehaviour
 
     protected Vector2 lookDir = Vector2.zero; //바라보는 방향
     public Vector2 LookDirection { get { return lookDir; } }
+
+    protected AnimationHandler animationHandler;
     #endregion
     protected virtual void Awake()//상속받아 사용할거라서 virtual 많이 쓸예정
     {
         rigidbody = GetComponent<Rigidbody2D>();
+        animationHandler = GetComponent<AnimationHandler>();
     }
 
     protected virtual void Start()
@@ -38,6 +41,7 @@ public class BaseController : MonoBehaviour
     {
         direction = direction * 5f;
         rigidbody.velocity = direction;
+        animationHandler.Move(direction);
 
     }
 

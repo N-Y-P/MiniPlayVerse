@@ -21,7 +21,7 @@ public class PlayerController : BaseController
     // Update is called once per frame
     void Update()
     {
-        //base.Update();
+        base.Update();
     }
 
     void OnMove(InputValue input)
