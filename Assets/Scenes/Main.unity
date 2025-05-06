@@ -2031,9 +2031,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c8974a5bd783d44d8441213f22cbd1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 767286067}
+  target: {fileID: 767286070}
+  useClamp: 1
   min: {x: -4, y: -1.6}
   max: {x: 4, y: 1}
+  followY: 1
   offset: {x: 0, y: 0, z: 0}
 --- !u!1 &645843688
 GameObject:
@@ -2126,7 +2128,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &687569294
 RectTransform:
   m_ObjectHideFlags: 0

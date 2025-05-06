@@ -30,7 +30,7 @@ public class Interacts : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        // 나간 상대의 태그에 매핑된 UI가 있으면 끄기
+        //태그에 매핑된 UI가 있으면 끄기
         foreach (var m in mappings)
         {
             if (other.CompareTag(m.tag))
