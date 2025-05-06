@@ -333,7 +333,7 @@ TextureImporter:
         width: 196
         height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -341,6 +341,27 @@ TextureImporter:
       bones: []
       spriteID: 9786eb9449f53c045bee8297e6240501
       internalID: -83331386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameOver
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1141
+        width: 412
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ca70baca3e1994d931e7c236bc9a3b
+      internalID: -1681107544
       vertices: []
       indices: 
       edges: []
@@ -358,6 +379,7 @@ TextureImporter:
     nameFileIdTable:
       Background: 1502868939
       ButtonBackground: -83331386
+      GameOver: -1681107544
       GetReady: -629404098
       bottom: 1203158000
       ground: 707380902
