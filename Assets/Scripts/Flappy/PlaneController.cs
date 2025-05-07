@@ -18,7 +18,7 @@ public class PlaneController : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
-    void OnPlaneMove()
+    void OnPlaneMove()//newinputsystem 마우스 왼쪽 클릭
     {
         isFlap = true;
     }

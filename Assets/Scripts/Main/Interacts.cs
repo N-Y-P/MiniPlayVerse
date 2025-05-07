@@ -18,6 +18,15 @@ public class Interacts : MonoBehaviour
     [Header("UI 넣기")]
     [SerializeField] Mapping[] mappings;
 
+    private void Start()
+    {
+        // 씬 시작하자마자 모든 매핑된 UI를 숨깁니다.
+        foreach (var m in mappings)
+        {
+            if (m.ui != null)
+                m.ui.SetActive(false);
+        }
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         foreach (var m in mappings)
@@ -35,7 +44,8 @@ public class Interacts : MonoBehaviour
         {
             if (other.CompareTag(m.tag))
             {
-                m.ui.SetActive(false);
+                if (m.ui != null)
+                    m.ui.SetActive(false);
             }
         }           
     }
