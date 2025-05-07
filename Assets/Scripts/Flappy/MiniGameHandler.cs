@@ -98,6 +98,7 @@ public class MiniGameHandler : MonoBehaviour
                 timer = timeLimit;
                 break;
             case State.Victory:
+                Time.timeScale = 0f;
                 uiPanels.victoryPanel.SetActive(true);
                 StartCoroutine(GoMain());
                 break;
@@ -119,6 +120,7 @@ public class MiniGameHandler : MonoBehaviour
     IEnumerator GoMain()
     {
         yield return new WaitForSecondsRealtime(resultDelay);
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Main");
     }
 
