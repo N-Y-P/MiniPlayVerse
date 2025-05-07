@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//플레이어 기준이 아닌 NPC 머리 위에 UI띄우기
 public class UIFollow : MonoBehaviour
 {
     public Transform target;

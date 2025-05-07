@@ -60,6 +60,7 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
+    //비행기 게임에서 현재 점수 올리기
     public void AddScore(int amount)
     {
         Score += amount;

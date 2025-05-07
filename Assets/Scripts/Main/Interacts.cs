@@ -20,7 +20,7 @@ public class Interacts : MonoBehaviour
 
     private void Start()
     {
-        // 씬 시작하자마자 모든 매핑된 UI를 숨깁니다.
+        // 씬 시작하자마자 모든 매핑된 UI를 숨기기
         foreach (var m in mappings)
         {
             if (m.ui != null)
